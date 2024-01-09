@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { TbTicket } from "react-icons/tb";
+// import { TbTicket } from "react-icons/tb";
 
 const NavBar = () => {
   const links = [
@@ -10,7 +10,7 @@ const NavBar = () => {
 
   return (
     <nav className='flex items-center space-x-6 border-b mb-5 px-5 h-14'>
-        <Link href="/"><TbTicket /></Link>
+        <Link href="/">Issue Tracker</Link>
         <ul className='flex space-x-6'>
             {links.map(link => 
               <Link key={link.href} 
